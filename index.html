@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webp#FIR</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+  <!-- 상단바 -->
+  <header link="#f53">
+    <div style="margin: 10px 0 0 7px;"><img style="width: 50px;" src="./img/로고.png"/></div>
+    <div style="margin: 18px 0 0 15px;">Webp.FIR  &nbsp&nbsp &nbsp&nbspMETAbook Air</div>
+    <div style="margin: 18px 0 0 15px;">&nbsp&nbsp<a href="https://portal.sejong.ac.kr/" target="_blank">REALbook?</a></div>
+  </header>
+
+  <span>
+    <a href="#" class = "hamburger-button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span> 
+    </a>
+    
+    <div class ="overlay">
+    <nav class="menu"> 
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    </div>
+    </span>
+
+
+    <section id="one">
+      <div class="inner innerS1">
+        <h1>METABook Air</h1>
+        <p>This is our <strong>first project</strong> for programming</p>
+        <p>ref.Apple</p>
+      </div>
+    </section>
+    <section id="two">
+      <div class="innerText innerS2">
+        <h2>We developed the M2</h2>
+        <ul class="features">
+          <li><strong>Up to 1.4x faster</strong> than M1 model</li>
+          <li><strong>Up to 15x faster</strong> than Intel based model</li>
+          <li><strong>Up to 15 hours battery life</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section id="three">
+      <div class="innerText innerS3">
+        <h2>To be clear, it’s gorgeous.</h2>
+        <ul class="features">
+          <li>The quick-release <strong> MagSafe power connector </strong>easily attaches — and detaches — with magnets, preventing any unintended flights. Two Thunderbolt ports let you connect and power high-speed accessories. You can also connect up to a 6K display. And the headphone jack supports high impedance headphones.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="four">
+      <div class="innerText innerS4">
+        <h2>Keep plugging away</h2>
+        <ul class="features">
+          <li>The breathtaking 13.6-inch Liquid Retina display is <strong>the biggest</strong> - and <strong>brightest</strong> ever on <strong>MacBook Air</strong>, with support for 1 billion colors. Text is supercrisp, and photos and movies more brilliant and vivid, with rich contrast and sharp detail.</li>
+        </ul>
+      </div>
+      </section>
+        <section id="five">
+          <div class="innerText innerS5">
+            <h2>Other Products</h2>
+            <ul class="features">
+              <li>Communication with <strong><a href="https://portal.sejong.ac.kr/" target="_blank">WEB</a></strong></li>
+            </ul>
+          </div>
+      </section>
+      <div class="iphone">
+        <p class="screen screenHat"><img src="./img/제목 없음-2.png" /></p>
+        <p class="screen screenA"><img src="./img/macair2.png" /></p>
+        <p class="screen screenB"><img src="./img/제목 없음-3.png" /></p>
+        <p class="screen screenC"><img src="./img/제목 없음-1.png" /></p>
+        <p class="screen screenD"><img class="mySlides" src="./img/airpods.png" /><img class="mySlides" src="./img/ipad.png"/><img class="mySlides" src="./img/iphonegold.png"/></p>
+      </div>
+    </section>
+
+          <!-- 바닥글 -->
+          <footer>
+                        <!-- 맨위로 올라가기 : https://jjeongil.tistory.com/1185 설명 -->
+                        <p class="back-to-top pointer" onclick="scrollToTop();return false;">Top</p>
+            </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      var timeOut;
+      function scrollToTop() {
+          if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+              window.scrollBy(0,-50);
+              timeOut=setTimeout('scrollToTop()',20);
+          }
+          else clearTimeout(timeOut);
+      }
+  </script>
+
+  <script>
+      /*Hamburger button styles*/
+      $(function() {
+        $('.hamburger-button').on('click', function(event){
+      event.preventDefault();
+  
+      $(this).toggleClass('active');
+          $('.overlay').toggleClass('visible');
+
+        });
+      });
+  </script>
+
+  </body>
+</html>
